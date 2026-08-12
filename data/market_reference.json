@@ -1,0 +1,32 @@
+{
+  "_comment": "FinLens Market Reference Data — Curated fallback benchmarks when live search fails.",
+  "_last_updated": "2026-08-12",
+  "home_loan_rates": {
+    "average_rate_pct": 8.75,
+    "range_low_pct": 8.25,
+    "range_high_pct": 9.50,
+    "source": "RBI data, major bank websites (Aug 2026)",
+    "banks": {
+      "SBI": 8.50,
+      "HDFC": 8.75,
+      "ICICI": 8.70,
+      "Axis": 8.75,
+      "PNB": 8.65
+    }
+  },
+  "term_insurance_premiums": {
+    "_note": "Annual premium for ₹1 Crore coverage, non-smoker, healthy",
+    "age_25": 8500,
+    "age_30": 12000,
+    "age_35": 16000,
+    "age_40": 22000,
+    "age_45": 32000,
+    "source": "PolicyBazaar, InsuranceDekho averages (Aug 2026)"
+  },
+  "processing_fees": {
+    "average_pct": 0.50,
+    "range_low_pct": 0.25,
+    "range_high_pct": 1.00,
+    "source": "Major bank rate cards (Aug 2026)"
+  }
+}

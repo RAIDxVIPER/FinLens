@@ -1,0 +1,140 @@
+# ==========================================
+# FinLens Root .gitignore
+# ==========================================
+
+# ──────────────────────────────────────────
+# 1. Environment & Secrets (NEVER COMMIT)
+# ──────────────────────────────────────────
+.env
+.env.*
+*.env
+*.env.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# ──────────────────────────────────────────
+# 2. Python / Backend (FastAPI + LangGraph)
+# ──────────────────────────────────────────
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+*.venv
+
+# Bytecode & cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Python distribution & packaging
+*.egg-info/
+.eggs/
+*.egg
+build/
+
+# Database files (SQLite & WAL logs)
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# PyMuPDF & parsing caches
+*.pdf.cache
+
+# Python testing, linting & type-checking
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# ──────────────────────────────────────────
+# 3. Node.js / Frontend (React + Vite + TS)
+# ──────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+frontend/dist/
+dist-ssr/
+frontend/dist-ssr/
+
+# Vite & TS caches
+.vite/
+frontend/.vite/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend test coverage
+coverage/
+.nyc_output/
+
+# ──────────────────────────────────────────
+# 4. User Uploads & Data
+# ──────────────────────────────────────────
+data/uploads/*
+!data/uploads/.gitkeep
+
+# ──────────────────────────────────────────
+# 5. OS & Editor Artifacts
+# ──────────────────────────────────────────
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code & JetBrains
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# General logs & swap files
+*.log
+*.tmp
+*.swp
+*.swo
